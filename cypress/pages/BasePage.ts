@@ -53,9 +53,7 @@ export class BasePage {
     }
 
     elementExists(selector: string) {
-        return cy.get('body').then($body => {
-            return $body.find(selector).length > 0;
-        });
+        return cy.get('body').find(selector).should('exist');
     }
 
     setAlias(selector: string, alias: string) {

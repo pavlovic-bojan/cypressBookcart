@@ -1,11 +1,11 @@
-import { LoginPage } from "../pages/LoginPage";
-import  UserData  from "../fixtures/users.json";
+import { LoginPage } from "../../cypress/pages/LoginPage";
+import  UserData  from "../../cypress/fixtures/users.json";
 
 describe('Login Tests', () => {
     const loginPage = new LoginPage();
 
     beforeEach(() => {
-        cy.visit('/login');
+        loginPage.navigateToLogin()
     });
 
     it('Should show username required error', () => {
@@ -39,4 +39,5 @@ describe('Login Tests', () => {
         loginPage.login( 'wrongUserName',UserData.User1.password);
         loginPage.assertIncorrectError();
     });
+
 });

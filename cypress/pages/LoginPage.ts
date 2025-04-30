@@ -8,11 +8,15 @@ export class LoginPage extends BasePage {
         loginButton: '.mat-mdc-card-actions > .mdc-button > .mdc-button__label',
         fieldRequestedError: 'mat-error[id="mat-mdc-error-0"]',
         fieldRequestedError1: 'mat-error[id="mat-mdc-error-1"]',
-        accountIcon: 'mat-icon[data-mat-icon-type="font"]'
+        accountIcon: 'mat-icon[data-mat-icon-type="font"]',
+        loginUrl:'/login'
     };
 
     private errorMessages = messages.LoginPage;
 
+    navigateToLogin() {
+        this.navigateTo(this.selectors.loginUrl);
+    }
     typeIntoFieldWithValidation(fieldSelector: string, value: string) {
         cy.get(fieldSelector).click().clear();
         if (value) {

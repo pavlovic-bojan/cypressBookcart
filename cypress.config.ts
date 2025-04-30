@@ -1,10 +1,9 @@
-import { defineConfig } from "cypress";
+import { defineConfig } from 'cypress';
 
 export default defineConfig({
   e2e: {
+    specPattern: 'apps/**/*.{cy,spec}.{ts,js}',
     baseUrl: 'https://bookcart.azurewebsites.net',
-    setupNodeEvents(on, config) {
-      // implement node event listeners here
-    },
+    supportFile: 'cypress/support/apps.ts',
   },
 });
