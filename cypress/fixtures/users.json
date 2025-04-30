@@ -1,6 +1,11 @@
 {
   "User1": {
     "userName": "Tests",
-    "password": "Test1test"
+    "password": "Test1test",
+    "name":"Test",
+    "address":"Test",
+    "address1":"Test",
+    "pinCode":"123456",
+    "state":"Test"
   }
 }
