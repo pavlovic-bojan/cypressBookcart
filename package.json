@@ -1,0 +1,16 @@
+{
+  "name": "cypressbookcart",
+  "version": "1.0.0",
+  "description": "This is the result of building E2E testing. The project utilizes the following technologies: Cypress, Allure Report, and Faker, alongside the TypeScript programming language, with GitHub Actions for CI/CD.",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "author": "Bojan Pavlovic <bojanpavlovicoffice@gmail.com>",
+  "license": "ISC",
+  "devDependencies": {
+    "@types/cypress": "^0.1.6",
+    "cypress": "^14.3.2",
+    "typescript": "^5.8.3"
+  }
+}
