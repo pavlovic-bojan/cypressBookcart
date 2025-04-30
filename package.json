@@ -1,7 +1,7 @@
 {
   "name": "cypressbookcart",
   "version": "1.0.0",
-  "description": "This is the result of building E2E testing. The project utilizes the following technologies: Cypress, Allure Report, and Faker, alongside the TypeScript programming language, with GitHub Actions for CI/CD.",
+  "description": "This is the result of building E2E testing with monorepo strategy . The project utilizes the following technologies: Cypress & alongside the TypeScript programming language.",
   "main": "index.js",
   "scripts": {
     "test:app1": "cypress run --spec apps/app1/**/*.cy.ts",

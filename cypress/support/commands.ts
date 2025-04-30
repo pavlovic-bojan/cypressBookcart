@@ -35,3 +35,15 @@
 //     }
 //   }
 // }
+
+import { LoginPage } from '../pages/';
+
+Cypress.Commands.add('loginSession', () => {
+    cy.fixture('users').then((users) => {
+        const loginPage = new LoginPage();
+        loginPage.navigateToLogin();
+        loginPage.login(users.User1.userName, users.User1.password);
+        loginPage.assertAccountIconVisible();
+    });
+});
+

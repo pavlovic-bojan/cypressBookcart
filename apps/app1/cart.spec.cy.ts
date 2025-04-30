@@ -1,5 +1,4 @@
 import { LoginPage, CartPage, WishlistPage, CheckoutPage } from "../../cypress/pages";
-import  UserData  from "../../cypress/fixtures/users.json";
 
 describe('Cart Tests', () => {
     const loginPage = new LoginPage();
@@ -9,7 +8,7 @@ describe('Cart Tests', () => {
 
     beforeEach(() => {
         loginPage.navigateToLogin()
-        loginPage.login(UserData.User1.userName, UserData.User1.password);
+        cy.loginSession();
     });
 
     it('Should add item to cart and remove from wishlist', () => {

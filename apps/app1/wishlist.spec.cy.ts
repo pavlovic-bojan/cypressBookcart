@@ -1,5 +1,4 @@
 import { WishlistPage, LoginPage } from '../../cypress/pages';
-import UserData from "../../cypress/fixtures/users.json";
 
 describe('Wishlist Tests', () => {
     const wishlistPage = new WishlistPage();
@@ -7,7 +6,7 @@ describe('Wishlist Tests', () => {
 
     beforeEach(() => {
         loginPage.navigateToLogin();
-        loginPage.login(UserData.User1.userName, UserData.User1.password);
+        cy.loginSession();
         wishlistPage.navigateToHome();
     });
 
