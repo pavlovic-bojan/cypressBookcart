@@ -16,7 +16,7 @@ describe('Cart Tests', () => {
         cartPage.addItemToCartAndRemoveFromWishList();
     });
 
-    it('Should count wishlist add to cart badge', () => {
+    it('Should count wishlist & count add to cart badge', () => {
         wishlistPage.assertWishlistCount();
         cartPage.assertCartCount();
     });
