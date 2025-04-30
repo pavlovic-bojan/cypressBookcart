@@ -1,4 +1,4 @@
-import { LoginPage } from "../../cypress/pages/LoginPage";
+import { LoginPage } from "../../cypress/pages";
 import  UserData  from "../../cypress/fixtures/users.json";
 
 describe('Login Tests', () => {
