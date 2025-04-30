@@ -1,0 +1,7 @@
+{
+  "LoginPage": {
+    "usernameRequired": "Username is required",
+    "passwordRequired": "Password is required",
+    "incorrectError": "Login Failed. Username or Password is incorrect."
+  }
+}
